@@ -1,0 +1,86 @@
+Phone
+
+------------------------------------------------------------------------------------------------
+Shortest Word Distance II
+Two Sum III - Data structure design
+read heavy还是write heavy
+------------------------------------------------------------------------------------------------
+Most challenge project.
+
+q1: int sqrx(int n)   -- binary search
+
+q2: reverse nested integer sum  eg. {{1}, 2}  :1x2+2=4
+
+------------------------------------------------------------------------------------------------
+一面. 
+valid parentheses. 
+maximum subarray, https://leetcode.com/problems/maximum-subarray/
+maximum product subarray, https://leetcode.com/problems/maximum-product-subarray/
+
+
+二面
+union/intersection.
+Isomorphic Strings
+
+------------------------------------------------------------------------------------------------
+valid number
+nested integer
+------------------------------------------------------------------------------------------------
+
+union / intersection list,  http://www.crazyforcode.com/union-intersection-linked-lists/
+
+
+1. Pow(x, n) 
+2. 给了个排好序的数组, 找第一个比 target 大的数的数组的下标。比如 A = [1, 3, 5, 7], target = 0, 返回 0；target = 1 返回 1； target = 2 返回 1 ; target = 6 返回 3； target = 8 也返回 0
+3. bonus 的问题 : Leetcode 205 Isomorphic String
+
+2. implement stack with pop(), push() and findmiddle() with O(1) time, 一开始我想用array做，面试官提醒resize的时候会有额外操作，就改用double linked list了。维护两个pointer，top和middle。follow up就是test case。
+
+
+
+
+OnSite
+
+Combination I, II
+Factor Combinations
+Minimum Window Substring
+max points in a line (gcd instead of slope)
+array of products without itself
+Search for a Range
+Find the size of longest palindrome subset of an array
+
+
+技术轮 1： 
+第一题, Roman to interger, integer to roman
+
+技术轮 2：
+第一题，combination sum: 输入一个数组，和一个目标数字，求有多少种方式能够用数组里面的数字求和得到目标数字. 
+第二题，leaf print common: 给一个树，每一轮把所有的叶子输出出来，并且假象拿掉，然后再次输出，再次假象拿掉叶节点，直到全树输出完成为止。要求不能改变树本身. 
+
+设计轮：
+tiny url：这个题目的面经很多了，就不多说了.
+
+r1: add/delete/random delete
+     leetcode DNA原题
+
+r2: K nearest points in 2D
+
+3. Coding。 Word Ladder II + 逐层脱落叶子的binary tree问题，之前面经有。 我都做出来了，而且提前做完了后面随便聊天。
+4. Design。 和之前面经一样Calendar system，要支持1M用户。我其实开始答得不好，但是后来follow up怎么支持1M用户时我说的方案应该就是面试官想要的。然后这轮后面又在闲聊了。
+5. Coding + 设计data structure的问题，就是那个 支持Add/Remove/Random remove 那个，最后都要O(1). 
+
+第二轮：国人美眉+国人小孩  LC  text justification原题。这位美眉为了给俺省白板空间，挺着大肚子还要爬椅子，好把问题写到白板顶部！感动的痛哭流涕。。。同时高度紧张，随时准备当肉垫， StringTokenizer
+第四轮：中亚人+国人shadown。要求设计一个calendar system。要求1000用户，并可能拓展到100M+（我xxx）。这轮应该是挂了，作死的选了个cassandra
+第六轮：国人美眉+国人大哥   #1  给BT，每一轮所有叶子脱落，直到root最后脱落，要求打印所有轮
+                       #2  minimum window substring
+                       
+第四轮是算法面试（２个人），一个问题是isomophic　string（leetcode上有）；第二个问题是upside-down a binary common。这２个都是leetcode　linkedin　tag下面
+第二轮是算法面试（2个人），一个问题是寻找2个linkedlist的回合点。这个题目其实很简单，主要是需要把test case想全，容易遗忘的case是如果linkedlist有环的话，我们可能永远到不了终点。
+第二个算法题目是max points on a line. 这个题目也需要tricky的case，　比如说２点连线是水平的，或者垂直的，或者重合的；还有一点就是应该用gcd来化简和表示斜率，不能有double表示。
+
+3. 白人小哥， Add Intervals Data Structure，秒杀。 具体就是给你一个java interface, 实现两个method，一个是void add interval(int from, int to), 另一个是int getTotalLength()返回已有interval的总时间，当然，要考虑overlapping。比如(1,5), (2, 6)的total length 是5. 
+5. 中国女+某中年大叔, minimum window substring, 有点小bug,基本秒杀, follow up: 如果string 很长很长怎么办， test cases怎么写
+6. 具体问题是how to create a dashboard for administrator to minitor the top shared url in the last 5 minutes. 当然之后聊得很深入比如high traffic, database schema design, user experience , performace issue, communication protocal, etc. 
+总体就是聊得很细聊得很全面. 我的感觉是我解决了他们提出的所有问题，白人小哥也一直很认可我的解决方案。我也在面试结尾问了他们:如果他们来解决这个问题，他们会怎么做，结果他们也没说啥很fancy的解法，所以真要问我为什么我跪了，我觉得实力不佳有点菜鸡可能是一方面，也可能是印度大叔觉得我听不懂他讲话挂掉的我。.鐣
+
+

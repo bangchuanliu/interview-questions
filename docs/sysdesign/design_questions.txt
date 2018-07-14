@@ -1,0 +1,54 @@
+Tiny URL
+
+设计数据结构，能够add(), remove(), randomremove() in O(1)复杂度. 
+
+build unique id, 
+https://blog.twitter.com/2010/announcing-snowflake
+http://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/
+
+Calendar System
+
+Monitor System
+
+设计Amazon Product Page, 就是在SQL里面一个产品有多个图片多个价格的话怎么设计数据库。然后后台提取数值render到页面上得时候，class怎么设计，服务器怎么安排之类的, 中间也有讨论怎样给suggest product，我提到可以建一个Product weighted graph, 然后用BFS.
+
+linkedin有很多server在做很多不同的事情，设计一个系统，监测24小时之内top 500的exceptions
+
+dashboard to monitor the top shared url in the last 5 minutes
+
+对于key,value pairs， 在给定的文件系统中实现 put，get，delete 的方法。其中key比较小，全部key可以放在内存中，value有的会比较大。已知一个文件系统，可以create files, delete files, sequentially scan file content, read file content randomly, append file content
+http://www.slideshare.net/dvirsky/introduction-to-redis
+
+已知一个函数，输入用户ID，可以返回该用户的所有友好（degree 1 friends），按好友ID从小到大排序。要求实现函数来输出返回一个用户的所有好友的好友(degree 2 friends), 以及 degree 3 friends。
+
+Design LinkedIn. .
+
+search功能里inverted index 和data of user , data of company 怎么存，分别用Nosql还是sql？然后设计timeline， 问我push/pull模型在哪儿看的
+
+design the backend of linkedin, 讨论各个service如何实现
+
+design a notebook application like Evernote or Onenote, it should support search, collaboration.
+
+社交网站上的文章转发，如何设计系统可以得到实时的转发量榜单和weekly digest，要求数据库的设计，有人转发一个文章时request是什么样的，如何快速得到实时的转发量榜单，如何得到weekly digest等。
+
+design a system to block malicious IPs
+
+a restful server with 4GB,  
+
+given a request such as: http://seq=4?len=60?xxxxdata
+
+the system will store the binary data with that sequence number.
+
+given a request: http://startseq=3?maxLen=100, the system returns all data objects with sequence >= 3 with total data length less equal than 100.
+
+multiple clients calling simutaneous. 
+
+what data structure, concurrency, locking, etc..
+
+问了一个类似dropbox的系统设计问题
+
+设计Delay Scheduler，能够把task schedule在特定的时间执行。
+
+设计一个Message Broker
+
+when a new version of API 上线，怎么和client side 协调好切换版本，出问题了rollback 怎么做

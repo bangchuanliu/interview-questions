@@ -1,0 +1,148 @@
+Problem/risk   --  action  -- result
+
+tell me about yourself / ice breaker (2 or 3 significant thing what you've done, how well you fit the new job)
+
+LendingClub, I'm primarily responsible for encrypting personal information data by using java security library, in other hand,
+I'm responsible for other projects' migration as well as providing technical support.
+
+Back to Walmart Labs, writing restful api, designing and implementing database schema, integrating with other servives in the platform.
+
+Back to Cisco, developing and mantaining our restful service
+
+about myself, my strengths are fast learner,smart and hard worker, self motivating and dedicated towards my work.
+I'm good at problem solving, trouble shooting, debugging.
+
+I don't like exercise a little bit, I spend a lot of time coding in front of computer in a day, I think that's not healthy.
+
+
+Why do you want to leave your job ?
+
+well, I do enjoy working in my current job, the culture makes the people a great place to work, but I'm looking for more opportunities with new fresh challenges.
+I work done completely and successfully in several projects, from start to finish during the past years, and currently,
+advance is been the opportunities are scares my current job, I don't mind slow down the pace from time to time.
+but it's important for me to keep my career continually moving in the forward direction. but it's really consistent in my career goals.
+
+Can you work under pressure ?
+
+I definitly can work under pressure, in my current position, I can be faced with stressful situations, they require me to work under pressure on a daily basis.
+I've since to learn to manage stress, now it's just the part of job I do well, 
+
+yes, I actually enjoy working under pressure, though, I believe that proper planing and good time management will greatly reduce any alarming deadlines.
+
+
+What's your expectation in your new role ?
+
+I expect build great product or service with my rich expericens in my new role. I expect take more responsibility and have more freedom to make a decision. 
+in the meantime, I expect I can touch some areas that I'm interested in in my future work.
+
+I want to be one of the reason for success of the organization and i want to be one of responsible person in organization growth
+
+
+why do you want to work here ?
+
+I'm not just looking for changing job for the sake of changing, nor I'm not looking for another larger pay check.
+I've been for 7 years in industry, I'm proud of my profession,
+your company has excellent products, they provide suprior service and has reputation that competion end it  ,
+ I share the same values that make this possible. would you enable me to fit into your organization but complement the team.
+
+I'm always wondering to work for coporated, because I always admire what you do, and it always been my dream job
+
+
+I know so much about this company, and you are a leader in industry, I'm impressed by the background stories and founders,
+this is the company I've been looking to work with and grow with, things are constantly developing and changing,
+and I believe I have the great deal of experiences to offer.
+
+
+
+
+1）你曾经做过什么超出工作预期的事情
+a. parse code coverage file (html source file) (package, class, red, green)to json string and send it to inner server, itegrated with jenkins and run it automatically.
+b. only for my team, but many team heard this tools, they want to use it, and I modify it and it is used in the company, win the credit for me and my team both.
+
+
+2） 你做Project的时候突然发生意想不到的困难，你是怎么解决的 (rest api framework transfer), send email to Paul
+a. classify the difficuties, techical or integration, resource issue.
+b. technical issue, design or coding issue, seek help from somebody who is expert. try to figurout using another way. probably another approach.
+c. resource issue (integration with others), check effort, if not big effor, I can do, review code and impact.
+
+
+3） 你是怎样帮助同事的 ？
+well, it sometimes happens, we are blocking by other teams. 
+
+a. my work depended on this other guy getting his work done, so by him not doing his job, he made me look bad.
+and the last time this happened, our whole team was at risk of missing an important deadline if he did not pull through.
+
+b. I scheduled some time to speak with him in an attempt to find out what was slowing him down.
+as it turns out, he was confused and not clear of what was expected of him and he did not know how to move forward
+I then helped him prioritize his tasks to where it made sense to him
+
+for the next two weeks, I paid more attention to him, and made it a priotity to stop by his desk and follow-up with him
+to make sure he remained on track.
+
+c. this only took an extra 20 minutes out of my day, but was well worth it, because we completed our project on time.
+I also did not have to talk to his supervisor to get this done.
+
+It was just a small case where one of my co-workers was falling a little behind and I'm glad I was there to help him get back
+on track.
+
+
+
+4） 你有没有和老板意见不统一的时候，是怎么解决的 (rest api version)
+a.  listen attentively, speak candidly, and treat others respectfully.
+b.  anlynize what I missed something, manger have a different pespective for one task.
+c. communicated with him respectfully in private, explain what I'm thinking, pros and cons.
+d. I beleive eventully, we get agreement, trade-off
+e. make poc and demonstrate my idea
+f. what's the best practice in industry, or in top companies like google, facebook.
+
+
+5） 你有没有和同事意见不一致，是怎么解决的
+a.  listen attentively, speak candidly, and treat others respectfully.
+b.  anlanize what I missed something, teammate have a different pespective for one task.
+c. communicated with him respectfully, explain what I'm thinking, pros and cons.
+d. best practice in industry. 
+
+
+6） 你有没有Convince过别人做一件什么事
+
+
+
+7） 你可以为我的Team带来什么 / What can you do for us that no one else can ?
+
+I'm well around the individual, with very unique blend skills, past training and job experiences have allowed me to take on complete projects and assignments of high importance and increaing difficulty well on time, I want to be part of your team and solve problems for you.
+
+I believe my unique blend skills, problem solving skills and people skills diffretiates my from those candidates, I'm motivated , displined and focused.
+and willing to do whatever it takes to get the job done.
+
+
+9） 你做了什么加强你和同事的联系，增加彼此的信任感, 怎么证明你是TeamPlayer，你为你的同事做过什么吗
+a. commit task, can finish it on time, not blocking other teamates
+b. help teammate if they need help under the condition of completing all the task in one sprint, co-work task, troubleshooting bugs.
+c. share knowledge what I know selflessly.
+d. give advice on other teammates' ticket. no offense, maybe helpful.
+
+
+
+
+10)  你有没有主动去做过一个项目. (torbit integration)
+a. Torbit integration
+b. meeting with other team only me, provide the coding solution and deployment solution.
+c. nobody wants to take it.
+
+
+
+11)  当你遇到不知道选哪个方案时，你怎么办 (join meeting flow) 
+a. long term goal
+b. risk level, implementation complexity
+c. writing data into both db in service / using shareplex to sync db data.
+
+12) 你在做项目的时候都是怎么获取知识的.
+	
+	business and technics
+
+a. get business knowledge from company wiki, if can't get what I want, consult teamate who knows that, under the condition of not disturbing his work, won't take his much time.
+b. looking into project code carefully and understand the data flow and key classes.
+c. bump into technical questions, looking into open source code, check error log, stack trace, after solve it, collect them into my document.
+
+
+

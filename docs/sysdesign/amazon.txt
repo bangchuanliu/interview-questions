@@ -1,0 +1,107 @@
+Behavior Questions
+
+1）你曾经做过什么超出工作预期的事情
+2） 你做Project的时候突然发生意想不到的困难，你是怎么解决的
+3） 你有没有没赶上DeadLine的项目
+4） 你有没有和老板意见不统一的时候，是怎么解决的
+5） 你有没有和同事意见不一致，是怎么解决的
+6） 你有没有Convince过别人做一件什么事
+7） 你可以为我的Team带来什么. 
+8） 怎么证明你是TeamPlayer，你为你的同事做过什么吗
+9） 你做了什么加强你和同事的联系，增加彼此的信任感
+10)  你有没有主动去做过一个项目. 
+11)  当你遇到不知道选哪个方案时，你怎么办
+12) 你在做项目的时候都是怎么获取知识的.
+
+------------------------------------------------------------------------------------------------
+deck of cards 
+求level里最大的节点数 BFS with queue, DFS with list
+word ladder II
+valid parentheses 
+
+------------------------------------------------------------------------------------------------
+
+第一轮：题是给一个已知的日期是星期几，求任意日期是星期几。
+
+第二轮：https://leetcode.com/problems/validate-binary-search-common/
+      https://leetcode.com/problems/copy-list-with-random-pointer/                    
+
+第三轮： Implement iterator，现在有一个iterator叫maybe good iterator，里面的item可能是good，可能是bad。现在要implement这个iterator叫goodIterator，重写hasNext和next，要求只返回good item。
+
+第四轮：题是有一个furniture的类，家具可能是木头桌子，铁椅子，塑料板凳啥都有可能。要求设计这个类，能实现两个function，applyHeat(), applyWeight()，意思就是抗火和承重能力。想跟他讨论了一下，我就说需要几个类啥的，我想复杂了，什么abstract class, interface都上了，其实他们想要的并不难，然后就跟着他的思路写下来，然后就讨论抗火，承重都和什么有关，由此决定function需要哪些parameter。
+
+------------------------------------------------------------------------------------------------
+
+第一轮：设计某个card game，写完基本的class之后让写shuffle，秒了，问了点data structure的东西。（本以为会来什么locker，reader system。。。）
+第二轮：设计 Uber系统，楼主扯了点geo－hash和简单设计，感觉老美挺满意的就问behavior.
+Word ladder 2，
+topological 排序，
+第五轮：烙印，上来问了个停车场的问题，楼主开始以为很难结果理解完题意发现就是hashmap解决的问题，秒写。三哥愣了半天才搞明白，看时间还有，果断来了到Binary Tree的，听完也是秒了，就是inorder traversal变形，打印竖着看有多少条lines。。。.鏈枃鍘熷垱鑷�1point3acres璁哄潧
+第六轮：烙印manager，上来问了最难的project。问了个lc 的中等难度的题，楼主写完接着聊聊他们组的活和oncall
+第七轮： 已经没什么体力了，上来一个老美manager，聊了点他在amazon觉得开心的东西，给了到无限输入数字流的问题，随便说了几种解法实现了一种。。
+
+------------------------------------------------------------------------------------------------
+Round 1 三哥
+问：一个百万行record的数据库表，有员工名字，manager名字，工资三中信息。 问要想载入内存，共查询，该用什么datastructre ？语言用java。
+List，HashMap等等。 只要能说出search 和insert的时间复杂度就行。 说出hashmap做不了range search更好。
+
+follow up： 实现一个简单地hashmap吧。用java 的generics
+这个看看JDK里的hashmap怎么实现的。 自己模仿写一下就能理解。
+
+Round 2 加拿大人
+问： phone number=>string的转换。例如2对应abc，3对应def（参考手机里的拨号软件UI）。给个号码，找出所有对应的string。bfs和dfs都要求写。问时间复杂度是多少，各自的优缺点是啥。
+空间 =>构建过程中bfs比较耗内存，因为要保存一堆中间状态的string；dfs则相对少用些内存。
+时间 => 算清楚string+string和stringbuilder构建新的string时间复杂度有啥区别。
+问behavior questoin ：需要做一个决定，但时间不够，信息不足，怎么办？
+本人答得也不好，也不知道怎么回答。还请各位指点。。
+
+Round 3 hiring manager 三叔
+问：在集群的web log中找连续访问两天的user ID。 假设log只有day1 和day2， 但log非常大，装不进内存。
+如果能装进内存，直接做set intersection。对于超大文件，思路是先做partition，在做set intersection。 
+问：那如何设计partition函数？ 
+如果是user id，应该是有含义的。例如section1-sectoin2-sectoin3， 一个section可以是geo location， membership， 等等。用这些信息做partition。
+
+
+问：假设已经做好了partition，写个函数实现set intersection。
+直接用了java set 的retainAll。但看到三叔不大满意，自己手写了retainAll的逻辑。
+
+
+behavior 问题： 之前工作里有没有遇到过deadline没法交差的情况？ 怎么解决的？
+答得不好。遇到此类问题不知该如何回答。 
+请教各位看官这类怎么回答才算好？
+
+Round 4 老美
+问：设计short URL service。 先从数据库表设计开始。
+用提问的方式排出了security， authentication和privacy之类的case。
+设计了只有两个字段的数据库 ：key 和original url。 哈希算法提议用MD5，取前面的7个字节（类似git commit的hash，2的 7*8= 56次方，够大了）。
+
+问：冲突怎么解决？
+如果一个key存在的话就用8字节作为key（小概率），还冲突的话就用9字节（此类service的life cycle中不会出现）。
+问：假设有了数据库访问跟hashing的api，写出read url和create short url的代码。
+很简单。无非是read的时候做些error handling，create的时候检查冲突。
+
+问：如果service火了，上述代码中那一段可能会成为瓶颈？ 怎么解决？ （scaling怎么做）
+数据库读写部分。 说道mysql read replica， master slave，再不行就用nosql之类的。 但没说caching，估计这是我的扣分项。
+问：了解哪些nosql 产品？ 比较下优缺点？
+说了Hbase和Cassandra （其实不大懂）
+
+总的来说，这一轮思路展开是没问题，不足之处是没用数字做推算（例如每月访问量是多少，需要多少storage）。
+
+------------------------------------------------------------------------------------------------
+Serialize and Deserialize Binary Tree
+Longest Consecutive Sequence
+Longest Increasing Path in a Matrix
+实现亚马逊电子书的用户和书籍系统。用户能知道自己account的书架上有什么书，能给书评分，能看到朋友读了什么书以及评分。 
+支持找一个用户所读书籍中，评分最高的书。还支持一个功能是给定某个用户，找出他的1度朋友中，读得最多的k本书。
+
+------------------------------------------------------------------------------------------------
+integer to roman.
+roman to integer
+就是一圈zombies，给你一个starting point，然后每隔k步你shoot一个zombie，完后依次下去直到剩下一个zombie，
+让你输出最后剩下的zombie。我用linkedlist做的，然后while loop每次shoot一个zombie，num-1删除那个listnode，直到最后num变成1跳出循环。
+
+------------------------------------------------------------------------------------------------
+大致是一个超大数据库可以记录customer信息，然后支持读写，讲讲设计
+merge k list
+在graph里面detect一个cycle
+------------------------------------------------------------------------------------------------

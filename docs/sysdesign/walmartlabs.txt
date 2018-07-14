@@ -1,0 +1,18 @@
+-----------------------------------------------------------------------------------------------------------
+1. leetcode permutations, wildcard matching
+
+2. find a number in a sorted matrix (rows-wise and column-wise sorted), find median of stream
+
+3. sudoku solver, how to improve performance. container with most water
+
+
+1.topological sort
+2.design web crawler system，how to scale，what would be the bottle neck and
+how to solve the problem
+3. 如何用semaphore或者condition variable实现3个process p1, p2, p3，p2必须要
+p1结束才能运行，p3必须要p2结束才能运行
+4. bloom filter 如何implement，estimate false rate
+5. what is the best design pattern do you think and why
+
+-----------------------------------------------------------------------------------------------------------
+
